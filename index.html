@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<title> Luxury Cars </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/photo-gallery.js"></script>
+<link rel="stylesheet" href="css/gallry.css">
+<link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" type="text/css" href="MenuEffect/css/default.css" />
+<link rel="stylesheet" type="text/css" href="MenuEffect/css/component.css" />
+<script src="MenuEffect/js/modernizr.custom.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+#mySidebar{
+
+  left: 0;
+  margin: 0;
+}
+</style>
+  </head>
+<body>
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+
+
+    <ul class="cbp-vimenu">
+        <li></li>
+    <li><a href="#" class="icon-archive">Archive</a></li>
+    <li><a href="#" class="icon-search">Search</a></li>
+    <li><a href="#" class="icon-pencil">Pencil</a></li>
+    <!-- Example for active item:
+            <li class="cbp-vicurrent"><a href="#" class="icon-pencil">Pencil</a></li>
+            -->
+    <li><a href="#" class="icon-location">Location</a></li>
+    <li><a href="#" class="icon-images">Images</a></li>
+    <li><a href="#" class="icon-download">Download</a></li>
+    </ul>
+
+  </div>
+
+  <div id="main">
+
+  <div class="w3-teal">
+    <button  id="closeNav" class="w3-bar-item w3-button w3-large" style="display:none"
+    onclick="w3_close()">Close &times;</button>
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+
+    </div>
+  </div>
+
+  <script>
+  function w3_open() {
+    document.getElementById("main").style.marginLeft = "5%";
+    document.getElementById("mySidebar").style.width = "2%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+    document.getElementById("closeNav").style.display = "block";
+  }
+  function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+    document.getElementById("closeNav").style.display = "none";
+  }
+  </script>
+
+
+
+
+  <header>
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/imag3.jpeg" style="width:100% ; height:300px ;">
+    <div class="text">Luxury Cars</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/imag1.jpeg" style="width:100% ; height:300px ;">
+    <div class="text">Luxury Cars</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/8.jpg" style="width:100% ; height:300px ;">
+    <div class="text">Luxury Cars</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+  </header>
+
+<script src="js/main.js"></script>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="Shopping/index.html">Shopping</a>
+  <a href="contact_form.html">Contact</a>
+  <a href="pages.html">About me</a>
+</div>
+
+
+
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/imag2.jpeg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Jane Doe</h2>
+          <p class="title">CEO &amp; Founder</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p></p>
+          <p><button class="button">   <a href="contact_form.html">Contact</a></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/imag1.jpeg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Mike Ross</h2>
+          <p class="title">Art Director</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p></p>
+          <p><button class="button"><a href="contact_form.html">Contact</a></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/imag3.jpeg" alt="John" style="width:100%">
+        <div class="container">
+          <h2>John Doe</h2>
+          <p class="title">Designer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p></p>
+          <p><button class="button"><a href="contact_form.html">Contact</a></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="main">
+
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Fast</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> Classic</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="images/4.jpg" alt="Mountains" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="images/1.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="images/2.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="images/3.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="images/4.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="images/5.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="images/11.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="images/9.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="images/10.jpg" alt="Car" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+
+<link rel="stylesheet" href="css/s3slider.css">
+<script src="js/s3slider.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

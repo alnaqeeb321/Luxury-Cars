@@ -1,0 +1,29 @@
+
+
+
+.fakeimg {
+  background-image: url("../images/imag3.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-jumbotron    {
+  background-image: url("../images/imag4.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.jumbotron   {
+  background-image: url("../images/1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
